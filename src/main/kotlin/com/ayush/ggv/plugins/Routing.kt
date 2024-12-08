@@ -1,7 +1,7 @@
-package com.ayush.ggv
+package com.ayush.ggv.plugins
 
+import com.ayush.ggv.route.auth.authRouting
 import io.ktor.server.application.*
-import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.ktor.server.html.*
 import kotlinx.html.*
@@ -56,5 +56,6 @@ fun Application.configureRouting() {
                 }
             }
         }
+        authRouting()
     }
 }
